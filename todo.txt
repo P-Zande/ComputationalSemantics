@@ -1,0 +1,10 @@
+Preprocessing:
+- Handle structures where a token is one level lower than the previous token, eg:
+fa
+ fa
+  t
+  t
+ t
+
+- Handle multiple verbnet labels on one token, e.g. pmb-4.0.0/data/en/gold/p03/d0766/
+  The second label can continue on the currentTokenWithVerbnet of the first label I think, as it can only be applied after the first label has been applied.
