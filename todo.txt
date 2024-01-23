@@ -1,14 +1,6 @@
 Preprocessing:
-- Handle structures where a token is one level lower than the previous token, eg:
-fa
- fa
-  t
-  t
- t
 
-- Handle multiple verbnet labels on one token, e.g. pmb-4.0.0/data/en/gold/p03/d0766/
-  The second label can continue on the currentTokenWithVerbnet of the first label I think, as it can only be applied after the first label has been applied.
+data/en/gold/p00/d0055 : 'There' becomes agent, but it shouldn't be semantically. Ask Johan how the assignment works here.
 
 
-
-data/en/gold/p00/d0055 : There becomes agent, but it shouldn't be semantically. Ask Johan how the assignment works here.
+p00/d0942 has multiple sentences. We ignore second sentences for now.
